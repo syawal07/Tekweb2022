@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Boostrab icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Syawal</title>
+</head>
+
+<body id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Menu Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./project.html">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./artikel.html">Artikel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+    <!-- about -->
+    <section>
+        <div class="container-fluid">
+            <div class="hero"></div>
+            <div class="content card px-3">
+                <h2>{{about.tentang}}</h2>
+                <p class=" penulis">{{about.penulis}}<a v-bind:href="about.a.url">{{about.a.nama}}</a>{{about.a.tgl}}
+                </p>
+
+                <p>{{about.deskripsi}}</p>
+                <p>{{about.deskripsi2}}</p>
+                <p>{{about.deskripsi3}}</p>
+            </div>
+            <div class="row mt-4">
+                <h2>{{about.pendidikan}}</h2>
+                <div class="col-6">
+                    <div class="card">
+                        <h5 class="card-header">{{about.Sekolah.dasar}}</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.Sekolah.nama0}}</h5>
+                            <p class="card-text">{{about.Sekolah.alamat0}}</p>
+                            <a v-bind:href="about.Sekolah.link0" class="btn btn-danger">{{about.Sekolah.lihat0}}</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-6">
+                <div class="card">
+                    <h5 class="card-header">{{about.Sekolah.menengah1}}</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">{{about.Sekolah.nama1}}</h5>
+                        <p class="card-text">{{about.Sekolah.alamat1}}</p>
+                        <a v-bind:href="about.Sekolah.link1" class="btn btn-danger">{{about.Sekolah.lihat1}}</a>
+                    </div>
+                </div>
+            </div>
+                <div class="col-6">
+                    <div class="card">
+                        <h5 class="card-header">{{about.Sekolah.menengah}}</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.Sekolah.nama}}</h5>
+                            <p class="card-text">{{about.Sekolah.alamat}}</p>
+                            <a v-bind:href="about.Sekolah.link" class="btn btn-danger">{{about.Sekolah.lihat}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <h5 class="card-header">{{about.Sekolah.kuliah}}</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.Sekolah.nama2}}</h5>
+                            <p class="card-text">{{about.Sekolah.alamat2}}
+                            </p>
+                            <a v-bind:href="about.Sekolah.link2" class="btn btn-danger">{{about.Sekolah.lihat}}</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-4 mx-auto align-item-center">
+                <h2>{{about.hardskill}}</h2>
+                <div class="col-3 mx-auto">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.hard.figma}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentase}}</h6>
+                            <p class="card-text">{{about.hard.deskfigma}}</p>
+                            <a v-bind:href="about.hard.urlfigma" class="card-link">{{about.hard.tentangfigma}}</a>
+                            <a v-bind:href="about.hard.urlprojek" class="card-link">{{about.hard.projekfigma}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-auto">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.hard.html}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentasehtml}}</h6>
+                            <p class="card-text">{{about.hard.deskhtml}}</p>
+                            <a v-bind:href="about.hard.urlhtml" class="card-link">{{about.hard.tentanghtml}}</a>
+                            <a v-bind:href="about.hard.urlprojek2" class="card-link">{{about.hard.projekhtml}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-auto">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.hard.css}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentasecss}}</h6>
+                            <p class="card-text">{{about.hard.deskcss}}</p>
+                            <a v-bind:href="about.hard.urlcss" class="card-link">{{about.hard.tentangcss}}</a>
+                            <a v-bind:href="about.hard.urlprojek3" class="card-link">{{about.hard.projekcss}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mx-auto">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{about.hard.js}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentasejs}}</h6>
+                            <p class="card-text">{{about.hard.deskjs}}</p>
+                            <a v-bind:href="about.hard.urljs" class="card-link">{{about.hard.tentangjs}}</a>
+                            <a v-bind:href="about.hard.urlprojek4" class="card-link">{{about.hard.projekjs}}</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row mt-4">
+                <h2>{{about.softskill.judul}}</h2>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            {{about.softskill.ps}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            {{about.softskill.psv}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            {{about.softskill.ct}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#1d1d1d" fill-opacity="1"
+                d="M0,160L34.3,165.3C68.6,171,137,181,206,160C274.3,139,343,85,411,64C480,43,549,53,617,69.3C685.7,85,754,107,823,122.7C891.4,139,960,149,1029,133.3C1097.1,117,1166,75,1234,53.3C1302.9,32,1371,32,1406,32L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- about -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

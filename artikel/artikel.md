@@ -1,0 +1,28 @@
+Apa itu CSS?
+
+Seperti yang telah disinggung di atas tadi, CSS adalah singkatan dari cascading style sheets. Menurut Techterms, CSS dapat diartikan sebagai lembar berjenjang untuk format tata letak halaman web. CSS merupakan sebuah temuan untuk membantu pengembang web yang tadinya hanya bergantung pada HTML sebagai bahasa markup. HTML di awal mula digunakan untuk menandai objek di halaman web seperti tabel, gambar, paragraf, dan sebagainya.
+
+Penggunaan HTML di awal mula perkembangan internet memang bisa dibilang cukup karena saat itu internet hanya digunakan oleh kalangan terbatas untuk berbagi informasi penelitian. Saat itu, proses format halaman amat terbatas dan gaya atau style halaman situs masih monoton. Namun belakangan, setelah internet digunakan luas dan makin berkembang orang-orang mulai berpikir bagaimana mengembangkan halaman situs agar lebih menarik. Hal ini yang lantas membuat HTML menjadi amat terbebani.
+
+Setelah perkembangan pesat internet, halaman web tidak hanya memiliki format tetapi juga warna dan tata letak lain harus dibebankan pada kontrol HTML. Pengembangan web berubah menjadi sesuatu yang sangat kompleks dan sulit ditangani. Tentu saja, peran HTML sebagai alat struktural dan alat bantu desain terasa amat berat. Untuk itulah kemudian CSS dibuat sebagai solusi dari tugas desain dan pemformatan, sedangkan HTML bisa kembali fokus pada tata letak halaman web.
+
+CSS muncul dan lantas dikenal sebagai alat untuk memformat dokumen yang ditulis menggunakan bahasa markup yaitu HTML. CSS juga dikenal sebagai bahasa style sheet yang bekerja sama dengan HTML untuk membangun sebuah halaman situs jejaring.
+
+Jadi, secara umum kita dapat mengartikan HTML sebagai bahasa untuk menggambarkan struktur halaman situs, sedangkan CSS merupakan bahasa untuk menggambarkan halaman situs, termasuk warna, tata letak, dan font. Hal ini memungkinkan seorang pengembang untuk mengadaptasi presentasi ke berbagai jenis perangkat, seperti layar besar monitor, layar kecil tablet atau smartphone, hingga mesin cetak (printer). CSS tidak lagi bergantung pada HTML dan dapat digunakan dengan bahasa markup lainnya.
+
+Pemisahan HTML dari CSS nantinya akan mempermudah pemeliharaan situs sehingga dapat berbagi style sheet di seluruh halaman dan menyesuaikan halaman dengan lingkungan yang berbeda. Pemisahan ini berarti pemisahan struktur (HTML) dari presentasi (CSS). 
+
+CSS bekerja saat sebuah browser menampilkan dokumen, sebabnya pada waktu itu browser harus menggabungkan konten dokumen dengan gaya informasi atau gaya presentasi dalam halaman sebuah situs. Untuk membangun sebuah halaman situs dan membuat presentasinya semenarik mungkin, CSS memiliki beberapa langkah cara kerja yang bisa digambarkan sebagai berikut,
+
+Load HTML, dalam tahap ini browser memuat HTML dari jaringan
+Parse HTML, pada tahap ini terjadi penguraian HTML untuk membuat document object model (DOM) dan memuat CSS. DOM bertindak untuk mewakili dokumen dalam memori komputer. DOM memiliki struktur seperti pohon dan mencakup elemen, atribut, potongan teks dalam bahasa markup yang menjadi simpulnya atau struktur pohon DOM. DOM dapat membantu pengembang untuk mendesain, men-debug, dan memelihara CSS karena DOM adalah tempat di mana CSS dan konten dokumen bertemu.
+Load CSS, peramban atau browser kemudian memuat sebagian besar sumber daya yang akan ditautkan oleh dokumen HTML, seperti gambar atau video sematan. Dalam hal ini kemudian CSS dimuat dan ditautkan.
+Parse CSS, sama halnya HTML, CSS juga kemudian diurai dengan mengurutkan aturan yang berbeda berdasarkan jenis pemilihnya ke dalam bucket yang berbeda seperti elemen, kelas, ID, dan sebagainya. Penyeleksian ini nantinya menentukan aturan mana yang harus diterapkan ke simpul-simpul DOM.
+Render tree, penyeleksian dalam setiap elemen CSS yang akan diterapkan ke simpul DOM sesuai kebutuhannya tadi disebut render tree. Render tree ini diletakkan dalam struktur yang seharusnya muncul setelah aturan dan penyesuaian simpul dan elemen telah diterapkan.
+Display, setelah penyesuaian tadi berjalan dan aturan dijalankan maka CSS dan DOM akan membentuk tampilan visual sebuah halaman situs yang tertampil di layar.
+
+Menurut pengertian dan penjelasan CSS di awal tentunya telah tersirat bahwa CSS berfungsi untuk menyederhanakan kerja HTML dalam membangun sebuah halaman situs jejaring. Namun, jika dijabarkan kembali ada beberapa fungsi CSS yang memang berhubungan langsung dengan proses penyederhanaan kerja HTML tadi. Adapun beberapa fungsi CSS adalah sebagai berikut,
+
+Memuat halaman situs dengan cepat, peran CSS dalam menyederhanakan kerja HTML membuat proses pengodean akan lebih singkat sehingga hal ini berpengaruh pada penerapan dokumen dan proses pemanggilannya. Proses pembukaan halaman web dan pengunduhan dokumen dari situs akan berjalan lebih cepat daripada adanya atribut tag HTML di setiap dokumen.
+Desain diproses dengan cepat, penggunaan CSS untuk mengerjakan desain halaman web memang terbukti mempercepat proses pembangunan sebuah halaman web. Hal ini dikarenakan pembagian kerja antara HTML yang berperan membangun struktur web dan CSS dengan perannya terfokus pada desain web. Adanya CSS function dapat memungkinkan pengembang menerapkan satu dokumen dapat muncul di berbagai halaman web tanpa penyalinan kode berulang.
+Adaptif terhadap berbagai perangkat, fungsi CSS yang ini telah disinggung sebelumnya yaitu membuat konten halaman menjadi adaptif atau kompatibel terhadap berbagai perangkat atau browser dengan ukuran dan versi berbeda. CSS memungkinkan sebuah dokumen dibuka dalam perangkat terbaru dan versi lamanya, begitu pula berlaku pada versi browser yang dipakai pengguna.

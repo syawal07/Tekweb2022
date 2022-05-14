@@ -1,0 +1,56 @@
+/* CSS INDEX */
+body {
+  background-color: #cccccc;
+  padding-top: 6rem;
+}
+.navbar {
+  background-color: #1d1d1d;
+}
+#projects {
+  background-color: rgb(168, 212, 253);
+}
+.profil {
+  border: solid 0.3em #1d1d1d;
+  margin-top: 0;
+}
+.display-4 {
+  color: #1d1d1d;
+}
+.lead {
+  color: #1d1d1d;
+}
+section {
+  padding-top: 5rem;
+}
+.jumbotron {
+  padding-top: 0;
+}
+/* CSS ABOUT */
+
+.hero {
+  height: 500px;
+  background-image: url(../bahan/download.png);
+  background-size: cover;
+  background-position-x: 0px;
+  background-position-y: -10px;
+  border-bottom: 5px solid lightskyblue;
+  border-top: 5px solid salmon;
+}
+/* CSS PROJECT */
+
+#projects h2 {
+  color: azure;
+}
+#projects {
+  background-color: #cccccc; 
+}
+
+/* CSS CONTACT */
+footer {
+  background-color: #cccccc;
+  
+}
+/* CSS Artikel */
+.svg1 {   
+  bottom: 0;
+}
