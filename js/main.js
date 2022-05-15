@@ -3,7 +3,7 @@ Vue.createApp({
     return {
       navbar: {
         title: "My Portofolio",
-        description: "Ini adalah tempat saya untuk berbagi segala pengetahuan yang saya peroleh tentang koding dan teknologi.",
+        description: "Ini adalah tempat saya untuk berbagi dan belajar segala pengetahuan yang saya peroleh tentang koding dan teknologi.",
         menu: {
           home: {
             url: "/index.html",
@@ -78,61 +78,37 @@ Vue.createApp({
           urlprojek: "https://www.figma.com/file/pe4nJOvBQgBjTytAOi0orw/ZONE?node-id=0%3A1",
 
           html: "HTML",
-          persentasehtml: "80%",
+          persentasehtml: "60%",
           deskhtml:
-            "Saya juga sedang menekuni front end development sehingga saya mempelajari HTML atau yang biasa di sebut Hypertext Markup Language. Bahasa markup yang digunakan untuk membuat sebuah halaman web. ",
+            "Saya juga masih saat ini sedang mempelajari front end development sehingga saya mempelajari HTML atau yang biasa di sebut Hypertext Markup Language, namu saya masih perlu belajar lebih giat lagi untuk mengembangkan ini. Bahasa markup yang digunakan untuk membuat sebuah halaman web. ",
           tentanghtml: "HTML ...",
           urlhtml: "https://www.w3schools.com/html/default.asp",
           projekhtml: "Riwayat projek",
-          urlprojek2: "https://github.com/syafarino15/tekweb2022",
+          urlprojek2: "https://github.com/syawal07/Tekweb2022",
 
           css: "CSS",
-          persentasecss: "80%",
+          persentasecss: "55%",
           deskcss:
-            "Saya juga sedang menekuni front end development sehingga saya mempelajari CSS atau yang biasa di sebut Cascading Style Sheet. CSS akan menggubakan komponennya untuk membuat sebuah web lebih terstruktur dan seragam.",
+            "Saya juga sedang menekuni front end development sehingga saya mempelajari CSS atau yang biasa di sebut Cascading Style Sheet. CSS bekerja saat sebuah browser menampilkan dokumen, sebabnya pada waktu itu browser harus menggabungkan konten dokumen dengan gaya informasi atau gaya presentasi dalam halaman sebuah situs.",
           tentangcss: "CSS ...",
           urlcss: "https://www.w3schools.com/css/",
           projekcss: "Riwayat projek",
-          urlprojek3: "https://github.com/syafarino15/tekweb2022",
+          urlprojek3: "https://github.com/syawal07/Tekweb2022/tree/master/css",
 
           js: "Javascript",
-          persentasejs: "80%",
+          persentasejs: "40%",
           deskjs:
-            "JavaScript adalah bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Bahkan dengan JavaScript ini kamu bisa membuat aplikasi, tools, atau bahkan game pada web ",
+            "Dan terakhir saya juga masih mempelajari java script karena mempelajari JavaScript membuat pengembangan website agar lebih dinamis dan interaktif.",
           tentangjs: "Javascript ...",
           urljs: "https://www.w3schools.com/js/default.asp",
           projekjs: "Riwayat projek",
-          urlprojek4: "https://github.com/syafarino15/tekweb2022",
+          urlprojek4: "https://github.com/syawal07/Tekweb2022/tree/master/js",
         },
         softskill: {
-          judul: "Soft Skill",
-          ps: "Public Speaking",
-          psv: "Problem Solving",
-          ct: "Critical Thingking",
-        },
-      },
-      projek: {
-        nama: "My Project",
-        projek1: {
-          url: "../bahan/projek2.PNG",
-          desk1: "Ini adalah projek saya dalam membuat sebuah prototype aplikasi yang bernama ZONE. Pada projek ini saya mengambil peran sebagai Usage research dan UX Designer.",
-        },
-        projek2: {
-          url: "../bahan/projek1.PNG",
-          desk2: "Sedangkan ini adalah contoh prototype grab yang coba saya tirukan menggunakan aplikasi figma.",
-        },
-        projek3: {
-          url: "../bahan/spotify.PNG",
-          desk3:
-            "Selanjutnya prototype yang saya selesaikan adalah prototype sporify, saya coba menyelesaikan prototype seperti ini untuk melatih desain dan ke keakurasian detail desain saya. tujuannya untuk meningkatkan jam terbang dan kecekatan dalam mendesain. Saya menggunakan mobbin.   dalam mendesain ulang prototype.",
-        },
-        projek4: {
-          url: "../bahan/projek3.PNG",
-          desk4: "Ini adalah contoh wireframe sekaligus prototype yang digunakan dalam mendesain sebuah web dalam projek di semester 3.",
-        },
-        projek5: {
-          url: "../bahan/download.PNG",
-          desk5: "Berikut adalah projek saya dalam membuat desain tampilan awal sebuah web portofolio yang di dalamnya terdapat deskripsi diri.",
+          judul: "Hobby",
+          ps: "Membaca",
+          psv: "Olahraga",
+          ct: "Berimajinasi",
         },
       },
       contact: {
@@ -151,8 +127,8 @@ Vue.createApp({
         },
       },
       footer: {
-        url: "https://www.instagram.com/syafarino_15/",
-        nama: "An Syafarino Armawahyudi",
+        url: "https://www.instagram.com/syawalaja_/",
+        nama: "Syawal Saputra",
       },
     };
   },

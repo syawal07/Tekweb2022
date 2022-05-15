@@ -1,6 +1,6 @@
 /* CSS INDEX */
 body {
-  background-color: #cccccc;
+  background-color: #848080;
   padding-top: 6rem;
 }
 .navbar {
@@ -24,7 +24,34 @@ section {
 }
 .jumbotron {
   padding-top: 0;
+  font-family: 'Ubuntu', candara;
 }
+
+.jumbotron p {
+  font-size: 30px;
+  font-family: 'Ubuntu', candara;
+}
+
+
+
+.jumbotron .social .whatsapp a {
+  display: inline-block;
+  background: rgb(9, 234, 65);
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid rgb(9, 234, 65);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.jumbotron .social .whatsapp a:hover {
+  color: rgb(9, 234, 65);
+  background: none;
+}
+
 /* CSS ABOUT */
 
 .hero {
@@ -42,15 +69,14 @@ section {
   color: azure;
 }
 #projects {
-  background-color: #cccccc; 
+  background-color: #cccccc;
 }
 
 /* CSS CONTACT */
 footer {
   background-color: #cccccc;
-  
 }
 /* CSS Artikel */
-.svg1 {   
+.svg1 {
   bottom: 0;
 }

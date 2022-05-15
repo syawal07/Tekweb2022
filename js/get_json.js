@@ -10,8 +10,7 @@ Vue.createApp({
     getArtikel() {
       axios
         .get(
-          src="../js/article.json"
-          )
+          src="https://raw.githubusercontent.com/syawal07/Tekweb2022/master/js/article.json")
         .then((res) => {
           console.log(res.data); //melihat respon data pada console browser
           this.artikel = res.data; //memperbarui variabel header pada bagian data()

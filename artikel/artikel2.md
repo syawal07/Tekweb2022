@@ -1,4 +1,4 @@
-Pengertian HTML
+# Pengertian HTML
 
 
 HTML adalah bahasa standar pemrogaman yang digunakan untuk membuat halaman website, yang diakses melalui internet. Singkatan dari "Hypertext Markup Language" atau "bahasa markup".

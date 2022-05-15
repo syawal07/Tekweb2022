@@ -1,4 +1,4 @@
-Apa itu Javascript?
+# Apa itu Javascript?
 
 
 JavaScript adalah bahasa pemrograman populer yang digunakan untuk membuat situs dengan konten website yang dinamis. Faktanya, ada lebih dari 67,7 persen developer yang menggunakan JavaScript, lho!
