@@ -53,6 +53,75 @@ section {
 }
 
 /* CSS ABOUT */
+.hero {
+  height: 1000vh;
+}
+.container .kurung {padding-top: 0px;}
+.image-gede img {
+  width: 500px;
+  height: 700px;
+}
+
+.content-about {
+  margin-left: 30px;
+}
+
+.content-about p {
+  max-width: 650px;
+  font-size: 20px;
+  line-height: 37px;
+}
+.progress-title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin: 0 0 20px;
+}
+
+.progress {
+  height: 20px;
+  background: #171b3c;
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 2px 2px #4f4c4c;
+  margin-bottom: 40px;
+  overflow: visible;
+  position: relative;
+}
+
+.progress .progress-bar {
+  border-radius: 20px;
+  border: 1px solid #000;
+  animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+  width: 65px;
+  height: 25px;
+  line-height: 25px;
+  background: #171b3c;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid #000;
+  border-top: none;
+  box-shadow: 0 2px 2px #4f4c4c;
+  position: absolute;
+  bottom: -25px;
+  right: 60px;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+      width: 0;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+      width: 0;
+  }
+}
 
 .hero {
   height: 500px;
@@ -79,4 +148,22 @@ footer {
 /* CSS Artikel */
 .svg1 {
   bottom: 0;
+}
+/* TypeWriter */
+.typewriter {
+  animation: animated-cursor 600ms linear infinite;
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.typewriter h1 span {
+  color: #fc5404;
+  text-decoration: underline;
 }

@@ -49,21 +49,34 @@
     <!-- Akhir Navbar -->
     <!-- about -->
     <section>
-        <div class="container-fluid">
-            <div class="hero"></div>
-            <div class="content card px-3">
-                <h2>{{about.tentang}}</h2>
-                <p class=" penulis">{{about.penulis}}<a v-bind:href="about.a.url">{{about.a.nama}}</a>{{about.a.tgl}}
-                </p>
-
-                <p>{{about.deskripsi}}</p>
-                <p>{{about.deskripsi2}}</p>
-                <p>{{about.deskripsi3}}</p>
-            </div>
+        <div class="container">
+            <div class="row kurung justify-content-center">
+                <div class="col-md-8 d-flex justify-content-center align-items-center about-column">
+                    <div class="hero"></div>
+                    <div class="image-gede">
+                        <img src="../bahan/Sywl.png" alt="300px">
+                    </div> 
+                </div>
+                <div class="col-md-8 ">
+                    
+                    <div class="display-6 content-about">
+                        <h3 class="fw-bold">{{about.tentang}}</h3>
+                        <p class="text-break">
+                            {{about.deskripsi}}
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,218.7C384,181,480,107,576,101.3C672,96,768,160,864,186.7C960,213,1056,203,1152,208C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        
+    
             <div class="row mt-4">
+                
                 <h2>{{about.pendidikan}}</h2>
                 <div class="col-6">
-                    <div class="card">
+                    <div class="card h-100">
+                        <img src="../bahan/SDN 9 Baru-Baru Tanga.png" class="card-img-top" alt="300px">
+
                         <h5 class="card-header">{{about.Sekolah.dasar}}</h5>
                         <div class="card-body">
                             <h5 class="card-title">{{about.Sekolah.nama0}}</h5>
@@ -73,7 +86,8 @@
                     </div>
                 </div>
             <div class="col-6">
-                <div class="card">
+                <div class="card h-100">
+                    <img src="../bahan/Mts.jpeg" class="card-img-top" alt="300px">
                     <h5 class="card-header">{{about.Sekolah.menengah1}}</h5>
                     <div class="card-body">
                         <h5 class="card-title">{{about.Sekolah.nama1}}</h5>
@@ -84,6 +98,7 @@
             </div>
                 <div class="col-6">
                     <div class="card">
+                        <img src="../bahan/MAS Muhammadiyah Sibatua.jpeg" class="card-img-top" alt="300px">
                         <h5 class="card-header">{{about.Sekolah.menengah}}</h5>
                         <div class="card-body">
                             <h5 class="card-title">{{about.Sekolah.nama}}</h5>
@@ -94,6 +109,7 @@
                 </div>
                 <div class="col-6">
                     <div class="card">
+                        <img src="../bahan/UAD.jpg" class="card-img-top" alt="300px">
                         <h5 class="card-header">{{about.Sekolah.kuliah}}</h5>
                         <div class="card-body">
                             <h5 class="card-title">{{about.Sekolah.nama2}}</h5>
@@ -103,89 +119,71 @@
                         </div>
                     </div>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,218.7C384,181,480,107,576,101.3C672,96,768,160,864,186.7C960,213,1056,203,1152,208C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+                <section id="projects"></section>
+
+                <div class="container">
+                    <h2 class="text-center">SKILL SAYA</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+            
+                            <div class="progress-title">
+                                <h3>Microsoft Word</h3>
+                                <div class="progress">
+            
+                                    <div class="progress-bar" style="width:65%; background: blue;">
+                                        <div class="progress-value">65%</div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="progress-title">
+                                <h3>Microsoft Power Point</h3>
+                                <div class="progress">
+            
+                                    <div class="progress-bar" style="width:35%; background:red;">
+                                        <div class="progress-value">35%</div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="progress-title">
+                                <h3>HTML</h3>
+                                <div class="progress">
+            
+                                    <div class="progress-bar" style="width:20%; background:blueviolet">
+                                        <div class="progress-value">20%</div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="progress-title">
+                                <h3>CSS</h3>
+                                <div class="progress">
+            
+                                    <div class="progress-bar" style="width:15%; background:black;">
+                                        <div class="progress-value">15%</div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="progress-title">
+                                <h3>Java Script</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:20%; background:brown;">
+                                        <div class="progress-value">20%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!--end header-->
 
             </div>
-            <div class="row mt-4 mx-auto align-item-center">
-                <h2>{{about.hardskill}}</h2>
-                <div class="col-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">{{about.hard.figma}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentase}}</h6>
-                            <p class="card-text">{{about.hard.deskfigma}}</p>
-                            <a v-bind:href="about.hard.urlfigma" class="card-link">{{about.hard.tentangfigma}}</a>
-                            <a v-bind:href="about.hard.urlprojek" class="card-link">{{about.hard.projekfigma}}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">{{about.hard.html}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentasehtml}}</h6>
-                            <p class="card-text">{{about.hard.deskhtml}}</p>
-                            <a v-bind:href="about.hard.urlhtml" class="card-link">{{about.hard.tentanghtml}}</a>
-                            <a v-bind:href="about.hard.urlprojek2" class="card-link">{{about.hard.projekhtml}}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">{{about.hard.css}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentasecss}}</h6>
-                            <p class="card-text">{{about.hard.deskcss}}</p>
-                            <a v-bind:href="about.hard.urlcss" class="card-link">{{about.hard.tentangcss}}</a>
-                            <a v-bind:href="about.hard.urlprojek3" class="card-link">{{about.hard.projekcss}}</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 mx-auto">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">{{about.hard.js}}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{about.hard.persentasejs}}</h6>
-                            <p class="card-text">{{about.hard.deskjs}}</p>
-                            <a v-bind:href="about.hard.urljs" class="card-link">{{about.hard.tentangjs}}</a>
-                            <a v-bind:href="about.hard.urlprojek4" class="card-link">{{about.hard.projekjs}}</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="row mt-4">
-                <h2>{{about.softskill.judul}}</h2>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            {{about.softskill.ps}}
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            {{about.softskill.psv}}
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            {{about.softskill.ct}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#1d1d1d" fill-opacity="1"
-                d="M0,160L34.3,165.3C68.6,171,137,181,206,160C274.3,139,343,85,411,64C480,43,549,53,617,69.3C685.7,85,754,107,823,122.7C891.4,139,960,149,1029,133.3C1097.1,117,1166,75,1234,53.3C1302.9,32,1371,32,1406,32L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-            </path>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,218.7C384,181,480,107,576,101.3C672,96,768,160,864,186.7C960,213,1056,203,1152,208C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- about -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
