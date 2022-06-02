@@ -1,7 +1,17 @@
 /* CSS INDEX */
 body {
-  background-color: #848080;
+  background-color: #141313;
   padding-top: 6rem;
+  color: white;
+}
+.skill  h2{
+  color:black !important;
+}
+.skill h3{
+  color:black !important;
+}
+.card {
+  color: #000;
 }
 .navbar {
   background-color: #1d1d1d;
@@ -24,6 +34,7 @@ section {
 }
 .jumbotron {
   padding-top: 0;
+  
   font-family: 'Ubuntu', candara;
 }
 
@@ -58,13 +69,16 @@ section {
 }
 .container .kurung {padding-top: 0px;}
 .image-gede img {
-  width: 500px;
-  height: 700px;
+  position: relative;
+  float: left;
+  display: block;
+  width: 100%;
 }
 
 .content-about {
   margin-left: 30px;
 }
+
 
 .content-about p {
   max-width: 650px;
@@ -162,6 +176,7 @@ footer {
     border-right-color: transparent;
   }
 }
+
 
 .typewriter h1 span {
   color: #fc5404;

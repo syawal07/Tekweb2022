@@ -24,7 +24,7 @@ Vue.createApp({
         },
       },
       jumbotron: {
-        imageProfile: "./bahan/Sywl.png",
+        imageProfile: "./bahan/syawal.jpg",
         nama: "Syawal Saputra",
         role: "Pemula | Mahasiswa Universitas Ahmad Dahlan",
       },
