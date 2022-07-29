@@ -15,7 +15,10 @@ body {
 }
 .navbar {
   background-color: #1d1d1d;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+font
 #projects {
   background-color: rgb(168, 212, 253);
 }

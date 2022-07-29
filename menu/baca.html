@@ -65,37 +65,11 @@
     </nav>
     <!-- Akhir Navbar -->
     <!-- Artikel -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col mt-3">
-            <h2>{{judul}}</h2>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-4" v-for="dat in artikel">
-            <div class="card h-100">
-              <h5 class="card-header">{{dat.title}}</h5>
-              <div class="card-hero">
-                <img
-                  :src="dat.thumbnail_url"
-                  class="card-img-top"
-                  alt="projek"
-                />
-                <div class="card-body">
-                  <p class="card-text">{{dat.deskriptions}}</p>
-                  <a
-                    :href="'./baca.html?article='+dat.markdown"
-                    class="btn btn-danger"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <div class="row">
+        <div v-html="article" class="col-md-10"></div>
       </div>
-    </section>
+    </div>
 
     <!-- Akhir Artikel -->
     <!-- Isi Artikel -->

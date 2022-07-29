@@ -1,3 +1,4 @@
+let apiUrl = "https://myapi.s7aja.xyz/index.php/";
 Vue.createApp({
   data() {
     return {
@@ -10,7 +11,7 @@ Vue.createApp({
     getArtikel() {
       axios
         .get(
-          src="https://raw.githubusercontent.com/syawal07/Tekweb2022/master/js/article.json")
+          apiUrl+"articles")
         .then((res) => {
           console.log(res.data); //melihat respon data pada console browser
           this.artikel = res.data; //memperbarui variabel header pada bagian data()

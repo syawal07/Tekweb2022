@@ -1,3 +1,5 @@
+let apiUrl = "https://myapi.s7aja.xyz/index.php/";
+
 Vue.createApp({
   data() {
     return {
@@ -88,6 +90,8 @@ Vue.createApp({
         url: "https://www.instagram.com/syawalaja_/",
         nama: "Syawal Saputra",
       },
+      users:[],
+      portofolio:[],
     };
   },
   methods: {
@@ -102,9 +106,35 @@ Vue.createApp({
           console.log(error); //melihat error jika pengambilan data adalah gagal
         });
     },
+    getusers() 
+        {
+          axios 
+          .get(apiUrl + "users/1")
+          .then((res) => {
+            console.log(res.data);
+            this.users = res.data;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+        },
+  
+      getportofolio() 
+        {
+          axios 
+          .get(apiUrl + "portofolio/1")
+          .then((res) => {
+            this.portofolio = res.data;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+        },
   },
   beforeMount() {
-    this.getHeaderData(); //eksekusi fungsi getHeaderData() pada bagian methods saat halaman terbuka
+    this.getHeaderData(); 
+    this.getportofolio();
+    this.getusers();//eksekusi fungsi getHeaderData() pada bagian methods saat halaman terbuka
   },
 }).mount("#app");
 
