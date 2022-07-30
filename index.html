@@ -76,9 +76,9 @@
       <section class="jumbotron">
         <div class="row typewriter h-100 align-items-center">
           <div class="col-6 text-white">
-            <p>Hello, my name is</p>
-            <h1>Syawal Saputra</h1>
-            <p></p>
+            <p>{{users[0].deskripsi}}</p>
+            <h1>{{users[0].nama}}</h1>
+            <p>{{users[0].motto}}</p>
 
             <div class="social">
               <a href="https://www.instagram.com/syawalaja_/"
@@ -119,15 +119,15 @@
             <div class="image-gede">
               <img
                 class="img-fluid"
-                src="./bahan/syawal.jpg"
+                :src="portofolio[0].thumbnail_url"
                 alt="gambar syawal"
               />
             </div>
           </div>
           <div class="col-md-6">
             <div class="display-6 content-about">
-              <h3 class="fw-bold">{{about.tentang}}</h3>
-              <p class="text-break">{{about.deskripsi}}</p>
+              <h3 class="fw-bold">{{portofolio[0].title}}</h3>
+              <p class="text-break">{{portofolio[0].descriptions}}</p>
             </div>
           </div>
         </div>

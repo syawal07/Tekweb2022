@@ -109,7 +109,7 @@ Vue.createApp({
     getusers() 
         {
           axios 
-          .get(apiUrl + "users/1")
+          .get(apiUrl + "users")
           .then((res) => {
             console.log(res.data);
             this.users = res.data;
@@ -122,7 +122,7 @@ Vue.createApp({
       getportofolio() 
         {
           axios 
-          .get(apiUrl + "portofolio/1")
+          .get(apiUrl + "portofolio")
           .then((res) => {
             this.portofolio = res.data;
           })
